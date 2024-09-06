@@ -1,6 +1,5 @@
 <?php
 
-
 use App\Http\Controllers\GuestController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -8,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
+
 
 Route::get('/guests', [GuestController::class, 'index']);
 Route::get('/guests/{id}', [GuestController::class, 'get']);

@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\GuestRequest;
+use App\Http\Requests\GuestRequestUpdate;
 use App\Models\Guest;
+use App\Repositories\GuestRepository;
 use Illuminate\Http\Request;
 
 class GuestController

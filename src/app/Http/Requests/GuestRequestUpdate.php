@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Repositories\GuestRepository;
 use Illuminate\Foundation\Http\FormRequest;
 
 class GuestRequestUpdate extends FormRequest
